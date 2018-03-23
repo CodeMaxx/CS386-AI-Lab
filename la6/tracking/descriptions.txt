@@ -1,0 +1,51 @@
+### Note: The code has been commented and things have been explained there as well.
+
+## Part 1
+
+>> To initialise uniformly I took equal particles for all legal positions.
+Now out task is to update the particles based on the current observation.
+The new probability depends on the old probability for that particle and the
+likelihood of the observation. The distance acts as a proxy for the position
+which we're trying to estimate. If all the new particles have 0 probability
+get new uniformly distributed particles and start over. With this we will get 
+the new belief. We then sample new particles from the new belief distribution.
+To get the belief distribution we just get the frequency of every particle 
+and then divide by total particles to get inexact probabiltiy distribution.
+
+## Part 2
+
+>> Now time is changing, we want to get P(w-t+1 | w-t). But since we're doing inexact
+inference, we want to get particles from this distibution. Now our goal is to 
+somehow update the old particles to get the new particles from this distribution.
+For this we can get the new position distribution based on the old position(particle), 
+and then sample from this distribution to get the new particles.
+
+## Part 3
+
+>> For initialising unifromly, I took a cartesion product of self.legalPosition 
+in self.numGhost dimensions and chose all of them as particles (with equal probability).
+Rest of the thing is pretty similar to Part1. The variables in a particle - positions 
+of the ghosts are independent variables at a particular time. For calculating 
+Posterior = Prior * Likelihood, Likelihood = Product of likelihoods of all ghosts
+independently because all of the ghosts at a time are independent in the Bayes Net.
+Start over if all new particles have 0 probability.
+
+## Part 4
+
+>> The thought in this is again very similar to Part 2. The only difference is that 
+the distributions will depend on the positions of the other ghosts. But these distributions 
+have been made available to us as functions so we don't need to worry about generating them.
+For every old particle (ghost positions), we sample a new position for every ghost to get 
+a new particle.
+
+
+## Notice the difference between test 1 and test 3.
+## In both tests, Pacman knows that the ghosts will move to the sides of the game board.
+## What is different between the tests, and why?
+
+>> In testcase 1 we are not using our observations. Only the probability distribution 
+telling us that the ghosts move towards the sides are being used. So the probability 
+in agent's mind will slowly move towards the sides. In testcase 3 on the other hand 
+we also use the noisy distance, this can be used to further refine and localise the 
+probablities near the ghost's position by improving our particles and hence 
+the "convergence" will be faster.

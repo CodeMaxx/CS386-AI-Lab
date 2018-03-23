@@ -1,0 +1,54 @@
+1. Variation with number of training data points 'seen':
+
+There's a general increase in the validation accuracy with increase in the number of data points seen.
+This is because we initially had no idea of the data so the accuracy was low. As we see data,
+we tune out weights if we misclassify the data. This results in some of the characteristics of that data
+getting incorporated in the weights. Now if we see a similar data point later, there's a higher chance that 
+we will classify it correctly. As we see more points till 1000 the weights get better. But we also see a dip at 1500.
+This could occur due to multiple reasons. One reason can be that the points we saw between 1000 and 1500 had 
+a lot of data points which corresponded to the same label and since our weights got shifted towards 
+classifying them correctly, our model performed badly on the validation dataset which had all types of points.
+As the weight for this label was being improved, the weights for other labels were also changing, which caused 
+those other label points to get misclassified. In some sense we overfit for that label and hence the model did 
+not generalise well. There could also have been some outliers which skewed the weights and caused bad performance 
+on validation set.
+
+
+
+2. Variation with training set size in each iteration:
+
+There's a general increase in the validation accuracy with increase in the training set size.
+This is because we initially had no idea of the data so the accuracy was low. As we see data,
+we tune out weights if we misclassify the data. This results in some of the characteristics of that data
+getting incorporated in the weights. Now if we see a similar data point later, there's a higher chance that 
+we will classify it correctly.
+
+With a training set of a higher testing size there is a better chance that we will see more variations in 
+the kind of data with the same label, so our wights get tuned better. We also see a dip between 600 and 
+800 points. This might be occuring because the datapoints we saw between 600 and 800 had a lot of data points 
+which corresponded to the same label and since our weights got shifted towards 
+classifying them correctly, our model performed badly on the validation dataset which had all types of points.
+As the weight for this label was being improved, the weights for other labels were also changing, which caused 
+those other label points to get misclassified. In some sense we overfit for that label and hence the model did 
+not generalise well.
+
+
+
+a. With a 1000 data points, is your test accuracy close to 100%? Why (if it is) and why not (if it is not)?
+
+Ans. No it is not close to 100 but it is improving. It is not that close to 100 because probably the data is 
+not linearly separable and perceptron can only get close to 100% accuracy if the data is linearly separable.
+That is also for the training data. Another reason is that the training data can't perfectly represent the 
+entire possible distribution of data. So there are variations in the test set which are not captured in the 
+training data.
+
+
+b. Imagine a point on the x axis with 0 training points: that is, a classifier that must make predictions 
+based on no training data at all! How would such a classifier make predictions? 
+On this data set, what would be the accuracy of such a classifier?
+
+Ans. If the initial set of weights are 0, then for all the points all our score will be 0 and according to the code 
+it will give the first index as the answer which corresponds to the number 0. (It could also have chosen randomly 
+since all have same score.) So basically it will always give the same prediction for every photo.
+All the photos with that number (0) will get classified correctly.
+So the accuracy will be the percentage of testcases with the true label 0.

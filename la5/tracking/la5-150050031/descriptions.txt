@@ -1,0 +1,11 @@
+Question 1: In test cases where Pacman is boxed in (which is to say, he is unable to change his observation point), why does Pacman sometimes have trouble finding the exact location of the ghost?
+
+Ans. Since we are using Manhattan distance, this distance can be same for multiple positions of the ghost if the pacman is boxed in. The observations we are getting are an estimation of the manhattan distance and not the position. But we want to get the position. If pacman does not move we can't distinguish between positons with same manhattan distance. So the ghost can be present at any of the positions with the same manhattan distance.
+
+If it was possible for pacman to move then the locations with previously same manhattan distance would no longer be so, and through our observations we'll be able to distinguish them better now.
+
+########################################################################################################################
+
+Question 2: For which of the test cases do you notice differences emerging in the shading of the squares? Can you explain why some squares get lighter and some squares get darker?
+
+Ans. For testcases 2 and 3, I observed differences emerging in the shading of the squares. This is because both 2 and 3 ghosts are go south agents and hence they have tendency to move south. This fact is incorporated into the getPositionDistribution() function which gives more probability to the "souther" positions i.e. moving south from a position. Slowly more and more probability becomes concentrated towards the south and the squares get lighter. The top squares get darker. This can been seen in both test 2 and 3.
