@@ -23,7 +23,7 @@ def taskLinear():
 	###############################################
 	# TASK 2.1 - YOUR CODE HERE
 	
-	nn1 = nn.NeuralNetwork(len(XTrain[0]), len(YTrain[0]), 0, [], 2, 100, 10)
+	nn1 = nn.NeuralNetwork(len(XTrain[0]), len(YTrain[0]), 0, [], 0.9, 100, 10)
 	
 	###############################################
 
@@ -42,7 +42,7 @@ def taskSquare():
 	###############################################
 	# TASK 2.2 - YOUR CODE HERE
 	
-	nn1 = nn.NeuralNetwork(len(XTrain[0]), len(YTrain[0]), 1, [5], 3, 100, 10)
+	nn1 = nn.NeuralNetwork(len(XTrain[0]), len(YTrain[0]), 1, [6], 0.9, 100, 30)
 	
 	###############################################
 	
@@ -63,7 +63,7 @@ def taskCircle():
 	# TASK 2.3 - YOUR CODE HERE
 
 	nn1 = nn.NeuralNetwork(len(XTrain[0]), len(YTrain[0]), 1,
-	                       [10], 3, 100, 10)
+	                       [3], 0.9, 100, 30)
 	
 	###############################################
 
@@ -84,7 +84,7 @@ def taskSemiCircle():
 	# TASK 2.4 - YOUR CODE HERE
 	
 	nn1 = nn.NeuralNetwork(len(XTrain[0]), len(YTrain[0]), 1,
-	                       [10], 3, 100, 10)
+	                       [2], 3, 100, 30)
 	
 	###############################################
 
