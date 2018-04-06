@@ -22,6 +22,13 @@ about 70% of the cases which is quite decent. For other 30% seeds accuracy was u
 this can be treated as the minimal configuration required for decent accuracy. It's hard to get a configuration 
 which works for all seeds because the dataset and hence it's properties change and 3 nodes may not be enough.
 
+It is known that with 2 nodes in the hidden layer we can learn the XOR function but in this case even after 
+trying a lot of combinations of epochs and learning rate I wasn't able to get more than 90% accuracy. 
+It also depends a lot on the seed. I believe the epoch required for 90% accuracy would probably be too 
+high which is not worth exploring and just increases the time taken by the algorithm. Adding a new node is a 
+cheaper solution. Also since the system is not very large, it is possible it is getting stuck in local minimas 
+and not converging with 2 nodes in hidden layer.
+
 =====================================================================================================
 
 Task 2.3 Circle Data set
@@ -33,7 +40,8 @@ number of hidden layers, number of nodes in each hidden layer, learning rate, ba
 With 2 nodes in the hidden layer, the accuracy remained around 70%. With 3 nodes it was more than 90% for more 
 than 90% of the seeds I tried. Here we have to learn the centre(x,y) and the radius of the circle(r), thus it 
 seems fair that for a good accuracy we would require 3 nodes. Since it's not linearly separable data we can't 
-have just 1 node in the layer.
+have just 1 node in the layer. With 2 nodes the system is just not complex enough to learn the circular 
+classifier and hence not achieving that good an accuracy.
 
 I tried a higher learning rate this time (3) which worked better than 0.9
 
@@ -49,8 +57,8 @@ This gives high accuracy(95% +) with just two nodes in the hidden layer. My gues
 is some linearity in the data... for e.g. if x < 0 or y < 0 we can directly say which category the point 
 belongs to. The amount of linearity is greater than that of the circle and thus we did expect less number of 
 nodes to be required for this. With 1 node in the layer, we get around 80%. This is because the data is not 
-completely linear. More specifically half of the points in the first quadrant get misclassified by the 
-classifier.
+completely linear. More specifically about half of the points in the first quadrant get misclassified by the 
+classifier as it tries (and succeeds) to properly classify points in second and fourth quadrant.
 
 ========================================================================================================
 
