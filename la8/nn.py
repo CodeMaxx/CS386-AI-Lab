@@ -157,10 +157,6 @@ class NeuralNetwork:
 		
 		###############################################				 
 		# TASK 2 - YOUR CODE HERE
-
-		def sigmoid_derivative(x):
-			X = np.copy(x)
-			return X * (1 - X)
 		
 		delta = []
 		for i in range(self.numLayers):
