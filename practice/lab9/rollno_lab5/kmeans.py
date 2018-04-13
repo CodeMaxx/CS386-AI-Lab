@@ -1,6 +1,7 @@
 from math import *
 import random
 from copy import deepcopy
+import numpy as np
 
 def argmin(values):
     return min(enumerate(values), key=lambda x: x[1])[0]
@@ -27,7 +28,7 @@ def writefile(filename, means):
     with open(filename, 'w') as f:
         for m in means:
             f.write(','.join(map(str, m)) + '\n')
-    print 'Written means to file ' + filename
+    print('Written means to file ' + filename)
 
 
 def distance_euclidean(p1, p2):
@@ -42,7 +43,8 @@ def distance_euclidean(p1, p2):
 
     # TODO [task1]:
     # Your function must work for all sized tuples.
-
+    dist = [(x1-x2)**2 for x1, x2 in zip(p1, p2)]
+    distance = sqrt(sum(dist))
     ########################################
     return distance
 
@@ -62,7 +64,7 @@ def distance_manhattan(p1, p2):
 
     # TODO [task1]:
     # Your function must work for all sized tuples.
-
+    distance = sum([abs(x1-x2) for x1, x2 in zip(p1, p2)])
     ########################################
     return distance
 
@@ -78,7 +80,7 @@ def initialization_forgy(data, k):
 
     # TODO [task1]:
     # Use the Forgy algorithm to initialize k cluster means.
-
+    means = np.random.choice(data, size=(k))
     ########################################
     assert len(means) == k
     return means
@@ -98,9 +100,15 @@ def initialization_randompartition(data, distance, k):
     # TODO [task3]:
     # Use the randompartition algorithm to initialize k cluster means.
     # Make sure you use the distance function given as parameter.
-
+    labels = list(np.random.randint(k, size=(len(data))))
     # NOTE: Provide extensive comments with your code.
-
+    means = [tuple(0 for i in range(len(data[0])))] * k
+    counts = [labels.count(i) for i in range(k)]
+    for tup, lab in zip(data, labels):
+        means[lab] += tup
+    
+    for i in range(k):
+        means[i] = map(lambda x: x/counts[i], means[i])
     ########################################
     assert len(means) == k
     return means
@@ -143,7 +151,22 @@ def iteration_one(data, means, distance):
     # TODO [task1]:
     # You must find the new cluster means.
     # Perform just 1 iteration (assignment+updation)
+    new_means = [tuple(0 for i in range(dimension))] * k
+    counts = [0.0] * k
+    for point in data:
+        closest = 0
+        min_dist = float('Inf')
+        for i in range(k):
+            d = distance(point, means[i]) 
+            if d < min_dist:
+                min_dist = d
+                closest = i
+        new_means[closest] = tuple([sum(x) for x in zip(new_means[closest], point)])
+        counts[closest] += 1
 
+    for i in range(k):
+        # import pdb; pdb.set_trace()
+        new_means[i] = tuple(0.0 if t == 0 else t/counts[i] for t in new_means[i])
     ########################################
     return new_means
 
@@ -159,7 +182,11 @@ def hasconverged(old_means, new_means, epsilon=1e-1):
 
     # TODO [task1]:
     # Use Euclidean distance to measure centroid displacements.
-
+    for i in range(len(old_means)):
+        p = [x1-x2 > epsilon for x1, x2 in zip(old_means[i], new_means[i])]
+        if True in p:
+            return False
+    converged = True
     ########################################
     return converged
 
@@ -186,7 +213,13 @@ def iteration_many(data, means, distance, maxiter, epsilon=1e-1):
     # Stop only if convergence is reached, or if max iterations have been exhausted.
     # Save the results of each iteration in all_means.
     # Tip: use deepcopy() if you run into weirdness.
-
+    means_copy = deepcopy(means)
+    for i in range(maxiter):
+        new_means = iteration_one(data, means_copy, distance)
+        all_means.append(new_means)
+        if hasconverged(means_copy, new_means, epsilon):
+            break
+        means_copy = new_means
     ########################################
 
     return all_means
@@ -239,7 +272,7 @@ def parse():
     _a = parser.parse_args()
 
     if _a.input is None:
-        print 'Input filename required.\n'
+        print('Input filename required.\n')
         parser.print_help()
         sys.exit(1)
     

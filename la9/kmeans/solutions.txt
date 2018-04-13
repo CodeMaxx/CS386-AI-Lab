@@ -1,0 +1,33 @@
+Name: 
+Roll number: 
+========================================
+
+
+================
+     TASK 2
+================
+
+
+1. Run your code on datasets/garden.csv, with different values of k. Looking at the performance plots, does the SSE of k-means algorithm ever increase as the iterations are made? (1 mark)
+Answer:
+
+3. Look at the files 3lines.png and mouse.png. Manually draw cluster boundaries around the 3 clusters visible in each file (no need to submit the hand drawn clusters). Test the k-means algorithm on the datasets datasets/3lines.csv and datasets/mouse.csv. How does the algorithm’s clustering compare with the clustering you would do by hand? Why do you think this happens? (1 mark)
+Answer:
+
+
+
+================
+     TASK 3
+================
+
+1. For each dataset, with kmeansplusplus initialization algorithm, report “average SSE” and "average iterations". (1 mark)
+Answer:
+
+Dataset     |  Initialization | Average SSE  | Average Iterations
+==================================================================
+   100.csv  |        forgy    |             |     
+   100.csv  |        kmeans++ |             |     
+  1000.csv  |        forgy    |             |     
+  1000.csv  |        kmeans++ |             |     
+ 10000.csv  |        forgy    |             |     
+ 10000.csv  |        kmeans++ |             |     
