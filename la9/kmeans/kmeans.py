@@ -103,7 +103,7 @@ def initialization_kmeansplusplus(data, distance, k):
     # Make sure you use the distance function given as parameter.
 
     # NOTE: Provide extensive comments with your code.
-    
+
     # The first centroid is randomly selected
     means.append(random.sample(data, 1)[0])
     # Current minimum distance from any centroid
@@ -116,10 +116,14 @@ def initialization_kmeansplusplus(data, distance, k):
         for j in range(len(data)):
             # Calculate minimum distance
             d = distance(means[i], data[j])
+            d = d*d
             if d < min_dist[j]:
-                min_dist[j] = d    
+                min_dist[j] = d  
         # Choose a random index with probabilities proportional to min_dist
-        idx = np.random.choice(len(data), 1, min_dist)[0]
+        # import pdb; pdb.set_trace()
+        s = sum(min_dist)
+        prob = [i/s for i in min_dist]
+        idx = np.random.choice(len(data), 1, p=prob)[0]
         # Append the chosen point to means
         means.append(data[idx])
         # Note that in the next iteration, the min_dist for points in `means` will become 0

@@ -25,9 +25,9 @@ Answer:
 
 Dataset     |  Initialization | Average SSE  | Average Iterations
 ==================================================================
-   100.csv  |        forgy    |             |     
-   100.csv  |        kmeans++ |             |     
-  1000.csv  |        forgy    |             |     
-  1000.csv  |        kmeans++ |             |     
- 10000.csv  |        forgy    |             |     
+   100.csv  |        forgy    |     8472.63311469        |     2.43
+   100.csv  |        kmeans++ |     8472.63311469        |     2.49
+  1000.csv  |        forgy    |     21337462.2968        |     3.28
+  1000.csv  |        kmeans++ |     21843987.2717        |     3.44
+ 10000.csv  |        forgy    |     168842238.612        |     21.1
  10000.csv  |        kmeans++ |             |     
