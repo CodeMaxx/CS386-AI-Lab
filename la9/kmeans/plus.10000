@@ -1,0 +1,71 @@
+----------------------------------------
+
+Arguments:
+{'dist': <function distance_euclidean at 0x1011d6848>,
+ 'epsilon': 0.01,
+ 'init': <function initialization_kmeansplusplus at 0x1011d69b0>,
+ 'input': 'datasets/10000.csv',
+ 'k': 20,
+ 'maxiter': 10000,
+ 'numexperiments': 10,
+ 'output': None,
+ 'seed': 0,
+ 'verbose': False}
+----------------------------------------
+
+Number of points in input data: 10000
+
+Experiment: 1
+Seed: 0
+Sum Squared Error: 8981417.47538
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 2
+Seed: 1
+Sum Squared Error: 8981417.47538
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 3
+Seed: 2
+Sum Squared Error: 37594374.5173
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 4
+Seed: 3
+Sum Squared Error: 37590731.6414
+Number of iterations till termination: 11
+Convergence achieved: True
+Experiment: 5
+Seed: 4
+Sum Squared Error: 8981417.47538
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 6
+Seed: 5
+Sum Squared Error: 8981417.47538
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 7
+Seed: 6
+Sum Squared Error: 41188029.0015
+Number of iterations till termination: 12
+Convergence achieved: True
+Experiment: 8
+Seed: 7
+Sum Squared Error: 37591122.0595
+Number of iterations till termination: 15
+Convergence achieved: True
+Experiment: 9
+Seed: 8
+Sum Squared Error: 8981417.47538
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 10
+Seed: 9
+Sum Squared Error: 8981417.47538
+Number of iterations till termination: 2
+Convergence achieved: True
+
+
+Average SSE: 20785276.2072
+Average number of iterations: 5.3

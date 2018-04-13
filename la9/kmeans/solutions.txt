@@ -9,10 +9,12 @@ Roll number: 150050031
 
 
 1. Run your code on datasets/garden.csv, with different values of k. Looking at the performance plots, does the SSE of k-means algorithm ever increase as the iterations are made? (1 mark)
-Answer:
+Answer: No the SSE never increases in the k-means algorithm. In fact it can be proven that it will never increase. The decrease happens at two points, one is when we change the label of the points according to the centroid closest to it. This means that the closest centroid distance for every point that get relabelled has decreased, hence overall SSE has to decrease. Now the second step is that we get new means by making them the centroid of the current clusters. We know that the sum of squared distance is minimum from the mean (centroid), so again the SSE will decrease. And this process repeats. All this was also proved mathematically in class.
 
 2. Look at the files 3lines.png and mouse.png. Manually draw cluster boundaries around the 3 clusters visible in each file (no need to submit the hand drawn clusters). Test the k-means algorithm on the datasets datasets/3lines.csv and datasets/mouse.csv. How does the algorithm’s clustering compare with the clustering you would do by hand? Why do you think this happens? (1 mark)
-Answer:
+Answer: For 3lines dataset, I intuitively points in each line together in a cluster so as to get 3 oblong clusters. The algorithm on the other hand gave a very different answer. That is happening because we are using euclidean distance which leads to inherently believing that a cluster would be in a circular space around the centroid points chosen by the algorithm. Say if we have one of the centroid points at the center of the first line, the points around the center of the second line would be closer to it that those at the ends of the first line.
+
+For mouse dataset, I intuitively put the face in one cluster and each ear in one cluster. Again the algorithm doesn't match it, even though all these 3 clusters are circular. This time we see that some part of the face goes into the ear clusters. This happens because the circular region occupied by the mouse's face is large, and the ears are present close to the boundary of the face. Given the geometry of the face, the centroid for the face cluster would be somewhere close to the center of the face. Similarly for the ears. Now the points on the face near the ears are closer to the centroid of the ear than the centroid of the face due to the large radius of the face, this leads to the points getting classified with the ears.
 
 
 
@@ -26,8 +28,10 @@ Answer:
 Dataset     |  Initialization | Average SSE  | Average Iterations
 ==================================================================
    100.csv  |        forgy    |     8472.63311469        |     2.43
-   100.csv  |        kmeans++ |     8472.63311469        |     2.49
+   100.csv  |        kmeans++ |     8472.63311469        |     2.03
   1000.csv  |        forgy    |     21337462.2968        |     3.28
-  1000.csv  |        kmeans++ |     21843987.2717        |     3.44
+  1000.csv  |        kmeans++ |     19396736.1976        |     3.08
  10000.csv  |        forgy    |     168842238.612        |     21.1
- 10000.csv  |        kmeans++ |             |     
+ 10000.csv  |        kmeans++ |     20785276.2072        |     5.3
+
+In all the cases both the number of iterations as well as the Average SSE is lower than forgy. This is because we chose better initialisations in case of kmeans++. In kmeans the initial centroid chosen are farther away from each other, thus we can intuitively see that there is more probability that every point will find atleast one centroid close to it, i.e. for most of the points the minimum distance from the initial centroids will be less than that in case of forgy. Thus from the beginning the SSE is low. This leads to faster convergence. Also due to better initialisations there is a higher change of reaching to a better local minima. Forgy would get converged to not so good local minimas thus giving high SSE on convergence. 
