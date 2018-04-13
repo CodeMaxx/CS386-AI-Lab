@@ -1,0 +1,71 @@
+----------------------------------------
+
+Arguments:
+{'dist': <function distance_euclidean at 0x10fc22410>,
+ 'epsilon': 0.01,
+ 'init': <function initialization_forgy at 0x10fc22500>,
+ 'input': 'datasets/10000.csv',
+ 'k': 20,
+ 'maxiter': 10000,
+ 'numexperiments': 10,
+ 'output': None,
+ 'seed': 0,
+ 'verbose': False}
+----------------------------------------
+
+Number of points in input data: 10000
+
+Experiment: 1
+Seed: 0
+Sum Squared Error: 191360840.537
+Number of iterations till termination: 27
+Convergence achieved: True
+Experiment: 2
+Seed: 1
+Sum Squared Error: 149891946.868
+Number of iterations till termination: 19
+Convergence achieved: True
+Experiment: 3
+Seed: 2
+Sum Squared Error: 112953523.105
+Number of iterations till termination: 17
+Convergence achieved: True
+Experiment: 4
+Seed: 3
+Sum Squared Error: 137566739.239
+Number of iterations till termination: 19
+Convergence achieved: True
+Experiment: 5
+Seed: 4
+Sum Squared Error: 211294581.682
+Number of iterations till termination: 19
+Convergence achieved: True
+Experiment: 6
+Seed: 5
+Sum Squared Error: 151741675.172
+Number of iterations till termination: 19
+Convergence achieved: True
+Experiment: 7
+Seed: 6
+Sum Squared Error: 294971985.451
+Number of iterations till termination: 19
+Convergence achieved: True
+Experiment: 8
+Seed: 7
+Sum Squared Error: 147497229.654
+Number of iterations till termination: 33
+Convergence achieved: True
+Experiment: 9
+Seed: 8
+Sum Squared Error: 210945061.335
+Number of iterations till termination: 27
+Convergence achieved: True
+Experiment: 10
+Seed: 9
+Sum Squared Error: 80198803.0797
+Number of iterations till termination: 12
+Convergence achieved: True
+
+
+Average SSE: 168842238.612
+Average number of iterations: 21.1

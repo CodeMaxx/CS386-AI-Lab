@@ -1,0 +1,146 @@
+----------------------------------------
+
+Arguments:
+{'dist': <function distance_euclidean at 0x102e22410>,
+ 'epsilon': 0.01,
+ 'init': <function initialization_forgy at 0x102e22500>,
+ 'input': 'datasets/1000.csv',
+ 'k': 5,
+ 'maxiter': 10000,
+ 'numexperiments': 25,
+ 'output': None,
+ 'seed': 0,
+ 'verbose': False}
+----------------------------------------
+
+Number of points in input data: 1000
+
+Experiment: 1
+Seed: 0
+Sum Squared Error: 19102108.6867
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 2
+Seed: 1
+Sum Squared Error: 20081236.6407
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 3
+Seed: 2
+Sum Squared Error: 22070808.2453
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 4
+Seed: 3
+Sum Squared Error: 21458339.6876
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 5
+Seed: 4
+Sum Squared Error: 21354219.933
+Number of iterations till termination: 4
+Convergence achieved: True
+Experiment: 6
+Seed: 5
+Sum Squared Error: 24903046.9745
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 7
+Seed: 6
+Sum Squared Error: 19717791.1077
+Number of iterations till termination: 4
+Convergence achieved: True
+Experiment: 8
+Seed: 7
+Sum Squared Error: 19629095.4699
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 9
+Seed: 8
+Sum Squared Error: 21207429.8884
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 10
+Seed: 9
+Sum Squared Error: 18694895.1184
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 11
+Seed: 10
+Sum Squared Error: 20180341.8871
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 12
+Seed: 11
+Sum Squared Error: 20571449.2018
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 13
+Seed: 12
+Sum Squared Error: 20260737.1474
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 14
+Seed: 13
+Sum Squared Error: 20824711.3851
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 15
+Seed: 14
+Sum Squared Error: 19323771.6292
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 16
+Seed: 15
+Sum Squared Error: 24990145.7001
+Number of iterations till termination: 5
+Convergence achieved: True
+Experiment: 17
+Seed: 16
+Sum Squared Error: 26198546.6147
+Number of iterations till termination: 4
+Convergence achieved: True
+Experiment: 18
+Seed: 17
+Sum Squared Error: 20471516.4321
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 19
+Seed: 18
+Sum Squared Error: 20972654.1939
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 20
+Seed: 19
+Sum Squared Error: 19714502.5305
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 21
+Seed: 20
+Sum Squared Error: 20537840.8497
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 22
+Seed: 21
+Sum Squared Error: 19111716.8134
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 23
+Seed: 22
+Sum Squared Error: 25792464.4977
+Number of iterations till termination: 6
+Convergence achieved: True
+Experiment: 24
+Seed: 23
+Sum Squared Error: 23602271.1612
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 25
+Seed: 24
+Sum Squared Error: 22664915.6231
+Number of iterations till termination: 3
+Convergence achieved: True
+
+
+Average SSE: 21337462.2968
+Average number of iterations: 3.28

@@ -1,0 +1,521 @@
+----------------------------------------
+
+Arguments:
+{'dist': <function distance_euclidean at 0x10c6b6410>,
+ 'epsilon': 0.01,
+ 'init': <function initialization_forgy at 0x10c6b6500>,
+ 'input': 'datasets/100.csv',
+ 'k': 2,
+ 'maxiter': 10000,
+ 'numexperiments': 100,
+ 'output': None,
+ 'seed': 0,
+ 'verbose': False}
+----------------------------------------
+
+Number of points in input data: 100
+
+Experiment: 1
+Seed: 0
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 2
+Seed: 1
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 3
+Seed: 2
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 4
+Seed: 3
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 5
+Seed: 4
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 6
+Seed: 5
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 7
+Seed: 6
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 8
+Seed: 7
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 9
+Seed: 8
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 10
+Seed: 9
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 11
+Seed: 10
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 12
+Seed: 11
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 13
+Seed: 12
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 14
+Seed: 13
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 15
+Seed: 14
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 16
+Seed: 15
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 17
+Seed: 16
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 18
+Seed: 17
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 19
+Seed: 18
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 20
+Seed: 19
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 21
+Seed: 20
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 22
+Seed: 21
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 23
+Seed: 22
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 24
+Seed: 23
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 25
+Seed: 24
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 26
+Seed: 25
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 27
+Seed: 26
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 28
+Seed: 27
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 29
+Seed: 28
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 30
+Seed: 29
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 31
+Seed: 30
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 32
+Seed: 31
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 33
+Seed: 32
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 34
+Seed: 33
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 35
+Seed: 34
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 36
+Seed: 35
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 37
+Seed: 36
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 38
+Seed: 37
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 39
+Seed: 38
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 40
+Seed: 39
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 41
+Seed: 40
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 42
+Seed: 41
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 43
+Seed: 42
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 44
+Seed: 43
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 45
+Seed: 44
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 46
+Seed: 45
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 47
+Seed: 46
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 48
+Seed: 47
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 49
+Seed: 48
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 50
+Seed: 49
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 51
+Seed: 50
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 52
+Seed: 51
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 53
+Seed: 52
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 54
+Seed: 53
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 55
+Seed: 54
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 56
+Seed: 55
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 57
+Seed: 56
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 58
+Seed: 57
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 59
+Seed: 58
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 60
+Seed: 59
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 61
+Seed: 60
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 62
+Seed: 61
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 63
+Seed: 62
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 64
+Seed: 63
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 65
+Seed: 64
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 66
+Seed: 65
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 67
+Seed: 66
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 68
+Seed: 67
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 69
+Seed: 68
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 70
+Seed: 69
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 71
+Seed: 70
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 72
+Seed: 71
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 73
+Seed: 72
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 74
+Seed: 73
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 75
+Seed: 74
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 76
+Seed: 75
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 77
+Seed: 76
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 78
+Seed: 77
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 79
+Seed: 78
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 80
+Seed: 79
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 81
+Seed: 80
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 82
+Seed: 81
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 83
+Seed: 82
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 84
+Seed: 83
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 85
+Seed: 84
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 86
+Seed: 85
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 87
+Seed: 86
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 88
+Seed: 87
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 89
+Seed: 88
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 90
+Seed: 89
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 91
+Seed: 90
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 92
+Seed: 91
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 93
+Seed: 92
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 94
+Seed: 93
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 95
+Seed: 94
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 96
+Seed: 95
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+Experiment: 97
+Seed: 96
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 98
+Seed: 97
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 99
+Seed: 98
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 2
+Convergence achieved: True
+Experiment: 100
+Seed: 99
+Sum Squared Error: 8472.63311469
+Number of iterations till termination: 3
+Convergence achieved: True
+
+
+Average SSE: 8472.63311469
+Average number of iterations: 2.43
