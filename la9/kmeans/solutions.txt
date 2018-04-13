@@ -1,5 +1,5 @@
-Name: 
-Roll number: 
+Name: Akash Trehan
+Roll number: 150050031
 ========================================
 
 
@@ -11,7 +11,7 @@ Roll number:
 1. Run your code on datasets/garden.csv, with different values of k. Looking at the performance plots, does the SSE of k-means algorithm ever increase as the iterations are made? (1 mark)
 Answer:
 
-3. Look at the files 3lines.png and mouse.png. Manually draw cluster boundaries around the 3 clusters visible in each file (no need to submit the hand drawn clusters). Test the k-means algorithm on the datasets datasets/3lines.csv and datasets/mouse.csv. How does the algorithm’s clustering compare with the clustering you would do by hand? Why do you think this happens? (1 mark)
+2. Look at the files 3lines.png and mouse.png. Manually draw cluster boundaries around the 3 clusters visible in each file (no need to submit the hand drawn clusters). Test the k-means algorithm on the datasets datasets/3lines.csv and datasets/mouse.csv. How does the algorithm’s clustering compare with the clustering you would do by hand? Why do you think this happens? (1 mark)
 Answer:
 
 
